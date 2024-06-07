@@ -1,5 +1,10 @@
 using ApexIntegratorApi;
+using IntegratorApexPortal.Server.Data;
 using IntegratorDataAccess.DbAccess;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,11 +13,35 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.ApiKey,
+        Name = "Authorization"
+
+    });
+
+    options.OperationFilter<SecurityRequirementsOperationFilter>();
+});
+
+builder.Services.AddAuthorization();
+
+builder.Services.AddDbContext<AppDataContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AuthConection")));
+
+
+builder.Services.AddIdentityApiEndpoints<IdentityUser>()
+    //.AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<AppDataContext>();
+
 builder.Services.AddSingleton<ISqlDataAccess, SqlDataAccess>();
 builder.Services.AddSingleton<IGeneratedReturnsAccess, GeneratedReturnsAccess>();
 builder.Services.AddSingleton<IInstitutionsAccess, InstitutionsAccess>();
 builder.Services.AddSingleton<IReturnsAccess, ReturnsAccess>();
+
+
 
 var app = builder.Build();
 
@@ -31,11 +60,13 @@ app.UseCors(builder => builder
     .AllowAnyMethod()
     .AllowAnyHeader());
 
+app.MapIdentityApi<IdentityUser>();
+
 app.UseHttpsRedirection();
 
-app.ConfigureApi();
-
 app.UseAuthorization();
+
+app.ConfigureApi();
 
 app.MapControllers();
 

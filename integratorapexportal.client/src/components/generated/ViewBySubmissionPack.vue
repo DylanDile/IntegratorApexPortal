@@ -11,7 +11,7 @@ export default {
   },
   methods: {
     async getGeneratedReturns() {
-      await window.axios.get(`/generated_returns/by/submission_pack/${this.submissionPack}`).then((response) => {
+      await window.axios.get(`/api/generated_returns/by/submission_pack/${this.submissionPack}`).then((response) => {
         this.generatedReturns = response.data.body.list;
       })
     }

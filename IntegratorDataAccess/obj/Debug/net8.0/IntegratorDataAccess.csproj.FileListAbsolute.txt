@@ -11,3 +11,16 @@ C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Deb
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.pdb
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\ref\IntegratorDataAccess.dll
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.sourcelink.json
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\bin\Debug\net8.0\IntegratorDataAccess.deps.json
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\bin\Debug\net8.0\IntegratorDataAccess.dll
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\bin\Debug\net8.0\IntegratorDataAccess.pdb
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.csproj.AssemblyReference.cache
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.AssemblyInfoInputs.cache
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.AssemblyInfo.cs
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.csproj.CoreCompileInputs.cache
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.sourcelink.json
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.dll
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\refint\IntegratorDataAccess.dll
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.pdb
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\ref\IntegratorDataAccess.dll

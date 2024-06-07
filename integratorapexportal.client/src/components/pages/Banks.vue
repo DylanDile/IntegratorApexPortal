@@ -4,7 +4,7 @@ export default {
   components: {
     VueAwesomePaginate
   },
-  data(){
+   data() {
     return{
       page: 1,
       search: '',
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     async getBanks() {
-      await window.axios.get('/institutions').then((response) => {
+      await window.axios.get('/api/Institutions').then((response) => {
         this.banks = response.data.body.data;
         this.filteredBanks = response.data.body.data;
       })
@@ -55,16 +55,26 @@ export default {
       if(this.search === ''){
         this.filteredBanks =  this.banks;
         return;
-      }
+        }
 
-      this.filteredBanks = this.banks.filter(bank =>
+      this.banks = this.banks;
+
+        let filtered = this.banks.filter(bank =>
           bank.instName.toLowerCase().includes(this.search.toLowerCase())
-      );
+        );
+
+        if(filtered.length === 0){
+          this.filteredBanks = [];
+          return;
+        }
+
+        this.filteredBanks = filtered;
+        console.log(this.filteredBanks.length);
 
     },
     resetBanks(){
-      this.search = '';
-      this.filteredBanks =  this.banks;
+        this.filteredBanks = this.banks;
+        this.search = '';
     }
   },
   mounted() {

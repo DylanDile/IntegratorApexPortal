@@ -1,1 +1,2 @@
 C:\Users\om506305\source\repos\IntegratorApexPortal\integratorapexportal.client\obj\Debug\integratorapexportal.client.esproj.CoreCompileInputs.cache
+E:\CsharpProjects\projects\IntegratorApexPortal\integratorapexportal.client\obj\Debug\integratorapexportal.client.esproj.CoreCompileInputs.cache

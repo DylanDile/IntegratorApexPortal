@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "Alc9fCeHkG7/5eB3Ufy8CKA1VCS76XggamhlEeW1Y/w=",
+  "Hash": "oHdp4yulryGiV00gneS3G7iu/ahduCtIQD7PgJ2DeXI=",
   "Source": "IntegratorApexPortal.Server",
   "BasePath": "_content/IntegratorApexPortal.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\integratorapexportal.client\\integratorapexportal.client.esproj",
+      "Identity": "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\integratorapexportal.client\\integratorapexportal.client.esproj",
       "Version": 2,
       "Source": "integratorapexportal.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

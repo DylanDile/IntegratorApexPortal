@@ -1,0 +1,13 @@
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\bin\Release\net8.0\IntegratorDataAccess.deps.json
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\bin\Release\net8.0\IntegratorDataAccess.dll
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\bin\Release\net8.0\IntegratorDataAccess.pdb
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\IntegratorDataAccess.csproj.AssemblyReference.cache
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\IntegratorDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\IntegratorDataAccess.AssemblyInfoInputs.cache
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\IntegratorDataAccess.AssemblyInfo.cs
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\IntegratorDataAccess.csproj.CoreCompileInputs.cache
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\IntegratorDataAccess.sourcelink.json
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\IntegratorDataAccess.dll
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\refint\IntegratorDataAccess.dll
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\IntegratorDataAccess.pdb
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorDataAccess\obj\Release\net8.0\ref\IntegratorDataAccess.dll

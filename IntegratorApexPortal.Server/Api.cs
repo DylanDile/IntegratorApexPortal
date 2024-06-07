@@ -15,8 +15,8 @@ namespace ApexIntegratorApi
             app.MapGet("/api/generated_returns/by/date/{date}", GetReturnsByDate);
             app.MapGet("/api/generated_returns/submission_pack/consolidated", GetConsolidatedReturnsBySubmissionPack);
             app.MapGet("/api/generated_returns/by/submission_pack/{submissionPack}", GetReturnsBySubmissionPack);
-            app.MapPost("/api/generated_returns/regenerate", ReGenerateReturn);
-           
+            app.MapPost("/api/generated_returns/regenerate", ReGenerateReturn).RequireAuthorization();
+
         }
 
         private static async Task<IResult> GetReturns(IGeneratedReturnsAccess data)

@@ -14,13 +14,7 @@ namespace ApexIntegratorApi.Controllers
         {
             try
             {
-                //var institutions = await data.GetInstitutions();
-
-                List<InstitutionModel> institutions = new List<InstitutionModel>();
-                institutions.Add(new InstitutionModel { 
-                    InstitutionID = 1,
-                    InstName = "Institution 1", LEAD_CO_CODE = "INS001", LEAD_CO_NAME = "Institution 1 Description" });
-
+                var institutions = await data.GetInstitutions();
                 var response = ApiResponse.Start()
                    .Data("data", institutions)
                    .Success(true)

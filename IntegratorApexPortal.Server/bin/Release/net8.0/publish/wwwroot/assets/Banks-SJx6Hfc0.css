@@ -1,0 +1,1 @@
+.pagination-container{display:flex;column-gap:10px}.paginate-buttons{height:40px;width:40px;border-radius:20px;cursor:pointer;background-color:#f2f2f2;border:1px solid rgb(217,217,217);color:#000}.paginate-buttons:hover{background-color:#d8d8d8}.active-page{background-color:#3498db;border:1px solid #3498db;color:#fff}.active-page:hover{background-color:#2988c8}

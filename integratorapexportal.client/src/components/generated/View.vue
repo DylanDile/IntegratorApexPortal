@@ -25,7 +25,7 @@ export default {
       // })
     },
     async init() {
-      await window.axios.get(`/generated_returns/${this.rId}`).then((response) => {
+      await window.axios.get(`/api/generated_returns/${this.rId}`).then((response) => {
         this.model = response.data.body.model;
         if(this.model.worksheetsCreated){
           let jsonString = this.model.worksheetsCreated;

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj": {}
+    "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj": {
+    "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj",
+        "projectUniqueName": "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj",
         "projectName": "IntegratorDataAccess",
-        "projectPath": "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj",
-        "packagesPath": "C:\\Users\\om506305\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorDataAccess\\obj\\",
+        "projectPath": "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\om506305\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
