@@ -1,0 +1,6 @@
+@IntegratorApexPortal.Server_HostAddress = http://localhost:5107
+
+GET {{IntegratorApexPortal.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

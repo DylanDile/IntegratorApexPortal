@@ -1,0 +1,12 @@
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\bin\Debug\net8.0\IntegratorDataAccess.deps.json
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\bin\Debug\net8.0\IntegratorDataAccess.dll
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\bin\Debug\net8.0\IntegratorDataAccess.pdb
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.csproj.AssemblyReference.cache
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.AssemblyInfoInputs.cache
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.AssemblyInfo.cs
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.dll
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\refint\IntegratorDataAccess.dll
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.pdb
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\ref\IntegratorDataAccess.dll
