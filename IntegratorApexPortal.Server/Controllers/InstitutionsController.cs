@@ -1,10 +1,11 @@
 ﻿using ApexIntegratorApi.Core;
+using IntegratorDataAccess.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApexIntegratorApi.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class InstitutionsController : ControllerBase
     {
@@ -13,7 +14,12 @@ namespace ApexIntegratorApi.Controllers
         {
             try
             {
-                var institutions = await data.GetInstitutions();
+                //var institutions = await data.GetInstitutions();
+
+                List<InstitutionModel> institutions = new List<InstitutionModel>();
+                institutions.Add(new InstitutionModel { 
+                    InstitutionID = 1,
+                    InstName = "Institution 1", LEAD_CO_CODE = "INS001", LEAD_CO_NAME = "Institution 1 Description" });
 
                 var response = ApiResponse.Start()
                    .Data("data", institutions)

@@ -9,7 +9,16 @@
     <PackageJsonScriptsBuild Condition="$(PackageJsonScriptsBuild) == ''">vite build</PackageJsonScriptsBuild>
     <PackageJsonScriptsPreview Condition="$(PackageJsonScriptsPreview) == ''">vite preview</PackageJsonScriptsPreview>
     <PackageJsonScriptsLint Condition="$(PackageJsonScriptsLint) == ''">eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore</PackageJsonScriptsLint>
+    <PackageJsonDependenciesAxios Condition="$(PackageJsonDependenciesAxios) == ''">^1.7.2</PackageJsonDependenciesAxios>
+    <PackageJsonDependenciesCors Condition="$(PackageJsonDependenciesCors) == ''">^2.8.5</PackageJsonDependenciesCors>
+    <PackageJsonDependenciesKeycloakJs Condition="$(PackageJsonDependenciesKeycloakJs) == ''">^24.0.2</PackageJsonDependenciesKeycloakJs>
+    <PackageJsonDependenciesPinia Condition="$(PackageJsonDependenciesPinia) == ''">^2.1.7</PackageJsonDependenciesPinia>
+    <PackageJsonDependenciesPiniaPluginPersistedstate Condition="$(PackageJsonDependenciesPiniaPluginPersistedstate) == ''">^3.2.1</PackageJsonDependenciesPiniaPluginPersistedstate>
+    <PackageJsonDependenciesSweetalert2 Condition="$(PackageJsonDependenciesSweetalert2) == ''">^11.11.1</PackageJsonDependenciesSweetalert2>
     <PackageJsonDependenciesVue Condition="$(PackageJsonDependenciesVue) == ''">^3.4.21</PackageJsonDependenciesVue>
+    <PackageJsonDependenciesVueAwesomePaginate Condition="$(PackageJsonDependenciesVueAwesomePaginate) == ''">^1.1.46</PackageJsonDependenciesVueAwesomePaginate>
+    <PackageJsonDependenciesVueRouter Condition="$(PackageJsonDependenciesVueRouter) == ''">^4.3.2</PackageJsonDependenciesVueRouter>
+    <PackageJsonDependenciesVue3Toastify Condition="$(PackageJsonDependenciesVue3Toastify) == ''">^0.2.1</PackageJsonDependenciesVue3Toastify>
     <PackageJsonDevdependenciesVitejsPluginVue Condition="$(PackageJsonDevdependenciesVitejsPluginVue) == ''">^5.0.4</PackageJsonDevdependenciesVitejsPluginVue>
     <PackageJsonDevdependenciesEslint Condition="$(PackageJsonDevdependenciesEslint) == ''">^8.57.0</PackageJsonDevdependenciesEslint>
     <PackageJsonDevdependenciesEslintPluginVue Condition="$(PackageJsonDevdependenciesEslintPluginVue) == ''">^9.23.0</PackageJsonDevdependenciesEslintPluginVue>

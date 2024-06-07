@@ -10,3 +10,4 @@ C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Deb
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\refint\IntegratorDataAccess.dll
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.pdb
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\ref\IntegratorDataAccess.dll
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorDataAccess\obj\Debug\net8.0\IntegratorDataAccess.sourcelink.json

@@ -9,13 +9,13 @@ namespace ApexIntegratorApi
         public static void ConfigureApi(this WebApplication app)
         {
             // All of route mappings are defined here
-            app.MapGet("/generated_returns", GetReturns);
-            app.MapGet("/generated_returns/{id}", GetReturnById);
-            app.MapGet("/generated_returns/by/institution/{id}", GetReturnsByInstId);
-            app.MapGet("/generated_returns/by/date/{date}", GetReturnsByDate);
-            app.MapGet("/generated_returns/submission_pack/consolidated", GetConsolidatedReturnsBySubmissionPack);
-            app.MapGet("/generated_returns/by/submission_pack/{submissionPack}", GetReturnsBySubmissionPack);
-            app.MapPost("/generated_returns/regenerate", ReGenerateReturn);
+            app.MapGet("/api/generated_returns", GetReturns);
+            app.MapGet("/api/generated_returns/{id}", GetReturnById);
+            app.MapGet("/api/generated_returns/by/institution/{id}", GetReturnsByInstId);
+            app.MapGet("/api/generated_returns/by/date/{date}", GetReturnsByDate);
+            app.MapGet("/api/generated_returns/submission_pack/consolidated", GetConsolidatedReturnsBySubmissionPack);
+            app.MapGet("/api/generated_returns/by/submission_pack/{submissionPack}", GetReturnsBySubmissionPack);
+            app.MapPost("/api/generated_returns/regenerate", ReGenerateReturn);
            
         }
 

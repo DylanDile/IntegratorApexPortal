@@ -42,3 +42,4 @@ C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorApexPortal.Server\
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorApexPortal.Server\obj\Debug\net8.0\IntegratorApexPortal.Server.pdb
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorApexPortal.Server\obj\Debug\net8.0\IntegratorApexPortal.Server.genruntimeconfig.cache
 C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorApexPortal.Server\obj\Debug\net8.0\ref\IntegratorApexPortal.Server.dll
+C:\Users\om506305\source\repos\IntegratorApexPortal\IntegratorApexPortal.Server\obj\Debug\net8.0\IntegratorApexPortal.Server.sourcelink.json
