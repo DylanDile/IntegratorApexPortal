@@ -201,3 +201,5 @@ E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorApexPortal.Server\bin\
 E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorApexPortal.Server\bin\Debug\net8.0\Scrutor.dll
 E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorApexPortal.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
 E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorApexPortal.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorApexPortal.Server\bin\Debug\net8.0\appsettings.Production.json
+E:\CsharpProjects\projects\IntegratorApexPortal\IntegratorApexPortal.Server\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
