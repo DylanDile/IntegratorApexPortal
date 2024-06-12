@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntegratorDataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da1704f8ecda81bfeb88297d3b092b81508931a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b370c1bc2073d12aec32a22b8e1241425b519f1a")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntegratorDataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntegratorDataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

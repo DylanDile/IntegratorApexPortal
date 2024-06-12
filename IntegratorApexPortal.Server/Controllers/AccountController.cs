@@ -1,5 +1,6 @@
 ﻿using ApexIntegratorApi.Core;
 using IntegratorApexPortal.Dtos;
+using IntegratorApexPortal.Server.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -28,12 +29,21 @@ namespace IntegratorApexPortal.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] Register model)
         {
-            var user = new IdentityUser { UserName = model.Username, Email = model.Email, PhoneNumber = model.PhoneNumber };
+            var username = model.Firstname.ToLower() + model.Lastname.ToCharArray()[0].ToString().ToLower();
+            var user = new IdentityUser { UserName = username, Email = model.Email, PhoneNumber = model.PhoneNumber };
+
             var result = await _userManager.CreateAsync(user, model.Password);
 
             if (result.Succeeded)
             {
-                return Ok(new { message = "User registered successfully" });
+                // Store the user's institution ID in the user's claims
+                await _userManager.AddClaimAsync(user, new Claim("InstitutionID", model.InstitutionID.ToString()));
+
+                return Ok(ApiResponse.Start()
+                            .Message("User created successfully")
+                            .Data("model",  result)
+                            .Success(true)
+                            .Build());
             }
 
             return BadRequest(result.Errors);
@@ -46,6 +56,7 @@ namespace IntegratorApexPortal.Controllers
             if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
             {
                 var userRoles = await _userManager.GetRolesAsync(user);
+                var institutionIDClaim = await _userManager.GetClaimsAsync(user);
 
                 var authClaims = new List<Claim>
                 {
@@ -67,14 +78,21 @@ namespace IntegratorApexPortal.Controllers
                             .Data("roles", userRoles)
                             .Data("username", user.UserName!)
                             .Data("email", user.Email!)
+                            .Data("claims", institutionIDClaim)                                                   
                             .Success(true)
                             .Build());
             }
+            
+            List<string> errors = new List<string>();
+            errors.Add("Please provide corrent username or password");
 
-            return Unauthorized(ApiResponse.Start()
-                                .Message("Invalid credentials")
-                                .Success(false)
-                                .Build());
+
+            return UnprocessableEntity(
+                    ApiUnprocessedResponse.Start()
+                    .Errors("username", errors)
+                    .Build());
+
+      
         }
 
         [HttpPost("add-role")]

@@ -1,28 +1,22 @@
 ﻿using ApexIntegratorApi.Core;
+using IntegratorApexPortal.Server.Core;
 using IntegratorDataAccess.Models;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 
-namespace ApexIntegratorApi
+namespace IntegratorApexPortal.Server.Controllers
 {
-    public static class Api
+    [Route("api/[controller]")]
+    [ApiController]
+    public class GeneratedReturnsController : ControllerBase
     {
-        public static void ConfigureApi(this WebApplication app)
-        {
-            // All of route mappings are defined here
-           /* 
-            app.MapGet("/api/generated_returns", GetReturns);
-            app.MapGet("/api/generated_returns/{id}", GetReturnById);
-            app.MapGet("/api/generated_returns/by/institution/{id}", GetReturnsByInstId);
-            app.MapGet("/api/generated_returns/by/date/{date}", GetReturnsByDate);
-            app.MapGet("/api/generated_returns/submission_pack/consolidated", GetConsolidatedReturnsBySubmissionPack);
-            app.MapGet("/api/generated_returns/by/submission_pack/{submissionPack}", GetReturnsBySubmissionPack);
-            app.MapPost("/api/generated_returns/regenerate", ReGenerateReturn);
-           */
 
-        }
-
-        private static async Task<IResult> GetReturns(IGeneratedReturnsAccess data)
+        [HttpGet]
+        public async Task<IResult> GetReturns(IGeneratedReturnsAccess data)
         {
             try
             {
@@ -36,7 +30,9 @@ namespace ApexIntegratorApi
             }
         }
 
-        private static async Task<IResult> GetReturnById(IGeneratedReturnsAccess data, long id)
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<IResult> GetReturnById(IGeneratedReturnsAccess data, long id)
         {
             try
             {
@@ -58,8 +54,9 @@ namespace ApexIntegratorApi
             }
         }
 
-
-        private static async Task<IResult> GetReturnsByInstId(IGeneratedReturnsAccess data, long id)
+        [HttpGet]
+        [Route("by/institution/{id}")]
+        public async Task<IResult> GetReturnsByInstId(IGeneratedReturnsAccess data, long id)
         {
             try
             {
@@ -81,7 +78,9 @@ namespace ApexIntegratorApi
             }
         }
 
-        private static async Task<IResult> GetReturnsBySubmissionPack(IGeneratedReturnsAccess data, string submissionPack)
+        [HttpGet]
+        [Route("by/submission_pack/{submissionPack}")]
+        public async Task<IResult> GetReturnsBySubmissionPack(IGeneratedReturnsAccess data, string submissionPack)
         {
             try
             {
@@ -103,8 +102,9 @@ namespace ApexIntegratorApi
             }
         }
 
-
-        private static async Task<IResult> GetReturnsByDate(IGeneratedReturnsAccess data, DateTime date)
+        [HttpGet]
+        [Route("by/date/{date}")]
+        public async Task<IResult> GetReturnsByDate(IGeneratedReturnsAccess data, DateTime date)
         {
             try
             {
@@ -121,7 +121,9 @@ namespace ApexIntegratorApi
             }
         }
 
-        private static async Task<IResult> GetConsolidatedReturnsBySubmissionPack(IGeneratedReturnsAccess data, IReturnsAccess returns)
+        [HttpGet]
+        [Route("submission_pack/consolidated")]
+        public async Task<IResult> GetConsolidatedReturnsBySubmissionPack(IGeneratedReturnsAccess data, IReturnsAccess returns)
         {
             try
             {
@@ -132,7 +134,7 @@ namespace ApexIntegratorApi
                     models.Add(item);
                 }
 
-                if(submissionPacks == null)
+                if (submissionPacks == null)
                 {
                     return Results.NotFound();
                 }
@@ -153,12 +155,14 @@ namespace ApexIntegratorApi
             }
         }
 
-
-        private static async Task<IResult> ReGenerateReturn(IGeneratedReturnsAccess data, IInstitutionsAccess institutionsAccess, int id, string[] sheets)
+        [Authorize]
+        [HttpPost]
+        [Route("regenerate")]
+        public async Task<IResult> ReGenerateReturn(IGeneratedReturnsAccess data, IInstitutionsAccess institutionsAccess, int id, string[] sheets)
         {
             try
             {
-                if(sheets.Length == 0)
+                if (sheets.Length == 0)
                 {
                     return Results.BadRequest(
                         ApiResponse.Start()
@@ -184,7 +188,7 @@ namespace ApexIntegratorApi
                 GeneratedReturnsModel model = genReturns;
                 var insitution = await institutionsAccess.GetInstitutionById(genReturns.InstitutionID);
 
-                if(insitution == null)
+                if (insitution == null)
                 {
                     return Results.NotFound(
                         ApiResponse.Start()
@@ -193,10 +197,10 @@ namespace ApexIntegratorApi
                             .Message("Institution not found")
                             .Build()
                       );
-                } 
-               
+                }
+
                 List<ETLJob> jobs = new List<ETLJob>();
-                foreach(string sheet in sheets)
+                foreach (string sheet in sheets)
                 {
                     ETLJob job = new ETLJob();
                     job.LEAD_CO_CODE = insitution.LEAD_CO_CODE;
@@ -212,7 +216,7 @@ namespace ApexIntegratorApi
                     jobs.Add(job);
                     await data.AddETLJob(job);
                 }
-               
+
                 return Results.Ok(ApiResponse.Start()
                         .Data("model", model)
                         .Data("jobs", jobs)

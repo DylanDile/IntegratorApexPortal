@@ -1,6 +1,8 @@
 using ApexIntegratorApi;
+using IntegratorApexPortal.Server.Core;
 using IntegratorApexPortal.Server.Data;
 using IntegratorDataAccess.DbAccess;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -66,7 +68,8 @@ builder.Services.AddAuthentication(options =>
             Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]!)
             )
     };
-});
+})
+.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options => builder.Configuration.Bind("CookieSettings", options));
 
 builder.Services.AddAuthorization(options =>
 {
@@ -103,7 +106,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.ConfigureApi();
+//app.ConfigureApi();
 
 app.MapControllers();
 
