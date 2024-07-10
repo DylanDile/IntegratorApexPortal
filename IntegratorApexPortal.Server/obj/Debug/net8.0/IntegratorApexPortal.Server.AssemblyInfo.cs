@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IntegratorApexPortal.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b370c1bc2073d12aec32a22b8e1241425b519f1a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c6fe33a22ac14ee7e21a96413fc97f96b4fb45c")]
 [assembly: System.Reflection.AssemblyProductAttribute("IntegratorApexPortal.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IntegratorApexPortal.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
