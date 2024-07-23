@@ -137,7 +137,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.SpaProxy/8.0.6": {
+      "Microsoft.AspNetCore.SpaProxy/8.0.7": {
         "type": "package",
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.SpaProxy.dll": {}
@@ -1949,10 +1949,10 @@
         "microsoft.aspnetcore.identity.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.SpaProxy/8.0.6": {
-      "sha512": "LBIMKEYxs06TJi/7ekqbfJ8VuoBqC3EORy+mw7Xp0gDIdDGhuaKkeT8BWIzetBbGVix4Tpn3k9GEdJ8Z7E7YOw==",
+    "Microsoft.AspNetCore.SpaProxy/8.0.7": {
+      "sha512": "31Tcbla9XXgcKaso1VYPy5LBMzYSbY0i8taXYEyO6bknvak4DqKhWJ/FxDp7A9k21rT6QHyKT2P0Kl5FaeHDzA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.spaproxy/8.0.6",
+      "path": "microsoft.aspnetcore.spaproxy/8.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1960,7 +1960,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "build/Microsoft.AspNetCore.SpaProxy.targets",
         "lib/net8.0/Microsoft.AspNetCore.SpaProxy.dll",
-        "microsoft.aspnetcore.spaproxy.8.0.6.nupkg.sha512",
+        "microsoft.aspnetcore.spaproxy.8.0.7.nupkg.sha512",
         "microsoft.aspnetcore.spaproxy.nuspec"
       ]
     },
@@ -4858,19 +4858,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\om506305\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorApexPortal.Server\\IntegratorApexPortal.Server.csproj",
+      "projectUniqueName": "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorApexPortal.Server\\IntegratorApexPortal.Server.csproj",
       "projectName": "IntegratorApexPortal.Server",
-      "projectPath": "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorApexPortal.Server\\IntegratorApexPortal.Server.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorApexPortal.Server\\obj\\",
+      "projectPath": "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorApexPortal.Server\\IntegratorApexPortal.Server.csproj",
+      "packagesPath": "C:\\Users\\om506305\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorApexPortal.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\om506305\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4885,8 +4885,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj": {
-              "projectPath": "E:\\CsharpProjects\\projects\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj"
+            "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj": {
+              "projectPath": "C:\\Users\\om506305\\source\\repos\\IntegratorApexPortal\\IntegratorDataAccess\\IntegratorDataAccess.csproj"
             }
           }
         }
@@ -4956,7 +4956,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
